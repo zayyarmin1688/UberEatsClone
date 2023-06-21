@@ -1,0 +1,62 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ubereats-staging-155524-authRole",
+      "UnauthRoleArn": "arn:aws:iam::623421390410:role/amplify-ubereats-staging-155524-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::623421390410:role/amplify-ubereats-staging-155524-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-ubereats-staging-155524-deployment",
+      "UnauthRoleName": "amplify-ubereats-staging-155524-unauthRole",
+      "StackName": "amplify-ubereats-staging-155524",
+      "StackId": "arn:aws:cloudformation:us-east-2:623421390410:stack/amplify-ubereats-staging-155524/3f5b0910-eb5d-11ed-867d-0610e7480e91",
+      "AmplifyAppId": "d2mcc99j68uesf"
+    }
+  },
+  "auth": {
+    "UberEats": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ubereats-staging-155524-deployment/amplify-cfn-templates/auth/UberEats-cloudformation-template.json",
+        "logicalId": "authUberEats"
+      },
+      "lastPushTimeStamp": "2023-05-05T18:41:20.636Z",
+      "output": {
+        "UserPoolId": "us-east-2_PYRzqBWta",
+        "AppClientIDWeb": "o48n0l49q5kgjn7ek1t71pjfv",
+        "AppClientID": "1bu6omlpo3dob0sbk120ufjed2",
+        "IdentityPoolId": "us-east-2:cc6643e0-056a-441a-b3b6-0424ceda2e10",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:623421390410:userpool/us-east-2_PYRzqBWta",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "UberEats"
+      },
+      "lastPushDirHash": "dzF8UtWmN5RThbxdLty4Ndko6JE="
+    }
+  }
+}
